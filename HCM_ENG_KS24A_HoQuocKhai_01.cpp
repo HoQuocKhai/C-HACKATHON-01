@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdmath.h>
 int main (){
 	int MAX_SIZE=100;
 	int arr[MAX_SIZE];
