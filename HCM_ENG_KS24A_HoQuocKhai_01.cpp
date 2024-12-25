@@ -53,11 +53,12 @@ int main (){
 				break;
 			case 4:
 				int sum=0;
-				for (int i=0; i<n; i++){
+				for (int i=0; i<size; i++){
 					sum+=arr[i];
 				}
 				printf("tong cua tat ca phan tu: %d",sum);
 				break;
+			
 			case 5:
 				int valu;
 				printf("gia tri phan tu can them vao mang");
@@ -92,7 +93,7 @@ int main (){
 			case 8:
 				int find;
 				printf("nhap vao gia tri can tim");
-				scanf("%d"&find);
+				scanf("%d",&find);
 				for(int i =0 ;i< size; i++){
 					if(arr[i]==find){
 						printf("phan tu %d nam o vi tri index[%d]",find,i);
