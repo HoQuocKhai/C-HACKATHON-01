@@ -68,24 +68,24 @@ int main (){
 				break;
 			case 6:
 				int deleteIndex;
-                printf("Hay nhap vi tri can xoa:");
-                scanf("%d", &deleteIndex);
-                if(deleteIndex <0 || deleteIndex > size - 1){
-                    printf("vi tri can xoa ko hop le \n");
-                } else{
-                    for (int i = deleteIndex; i < size-1; ++i) {
-                        arr[i] = arr[i+1];
-                    }
-                    size--;
-                }
-                break;
-            case 7:
-            	for (int i = 0; i < n; i++){
-            		for(int j = 0; j<n-i-1; j++){
-            			if(arr[j]<arr[j+1]){
-            				int temp = arr[j];
-            				arr[j]=arr[j+1];
-            				arr[j+1]=temp;
+		                printf("Hay nhap vi tri can xoa:");
+                		scanf("%d", &deleteIndex);
+                		if(deleteIndex <0 || deleteIndex > size - 1){
+                  			printf("vi tri can xoa ko hop le \n");
+                		} else{
+                    			for (int i = deleteIndex; i < size-1; ++i) {
+                        		arr[i] = arr[i+1];
+                    			}
+                    			size--;
+                		}
+                		break;
+            		case 7:
+            			for (int i = 0; i < n; i++){
+            				for(int j = 0; j<n-i-1; j++){
+            					if(arr[j]<arr[j+1]){
+            						int temp = arr[j];
+            						arr[j]=arr[j+1];
+            						arr[j+1]=temp;
 						}
 					}
 				}
